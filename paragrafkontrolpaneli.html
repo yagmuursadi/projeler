@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Başlıksız Belge</title>
+</head>
+
+<body>
+	<p id="paragraf">HTML : web sayfalarının yapısını ve iskeletini oluşturmak için kullanılan standart işaretleme dilidir.</p>
+	
+	<input type="button" value="renklendir" onClick="renk();">
+	<input type="button" value="büyült" onClick="buyult();">
+	<input type="button" value="küçült" onClick="kucult();">
+	<input type="button" value="gizle" onClick="gizle();">
+	<input type="button" value="göster" onClick="goster();">
+	<input type="button" value="resetle" onClick="resetle();">
+
+	<script>
+
+	const paragraf = document.getElementById("paragraf");
+	const orijinalFontSize = window.getComputedStyle(paragraf).fontSize;
+	const orijinalColor = window.getComputedStyle(paragraf).color;
+
+	function renk(){
+		paragraf.style.color="red";
+	}
+
+	function buyult(){
+		paragraf.style.fontSize="30px";
+	}
+
+	function kucult(){
+		paragraf.style.fontSize = orijinalFontSize;
+	}
+
+	function gizle(){
+		paragraf.style.display="none";
+	}
+
+	function goster(){
+		paragraf.style.display="block";
+	}
+
+	function resetle(){
+		paragraf.style.fontSize = orijinalFontSize;
+		paragraf.style.color = orijinalColor;
+		paragraf.style.display = "block";
+	}
+	</script>
+
+</body>
+</html>
