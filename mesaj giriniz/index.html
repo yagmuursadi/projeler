@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Başlıksız Belge</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+	
+<body>
+	<div id="genelCerceve">
+     <div id="mesajGirisi">
+     <img src="profil.jpg">
+     <input type="text" id="mesaj" placeholder="Mesajınızı giriniz.">
+     <input type="button" value="Gönder" onclick="mesajGonder()">
+     </div>
+     <hr>
+     <div id="mesajKutulari">
+		 <script>
+			 function mesajGonder(){
+                 var mesaj=document.getElementById("mesaj").value;
+                 var d = new Date();
+                 var saat=d.getHours();
+                 var dakika=d.getMinutes();
+                 document.getElementById("mesajKutulari").innerHTML+=
+                 "<div class='gidenMesaj'> <img src='profil.jpg'>"
+                 + mesaj +
+                 "<span id='tarih'>"+saat+":"+dakika+"</span></div>";
+                 document.getElementById("mesaj").value="";
+                 }
+          </script>
+     </div>
+     </div>
+
+	 
+</body>
+</html>
