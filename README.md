@@ -1,2 +1,2 @@
-# projeler
-Öğrenme sürecim boyunca oluşturduğum projeler ve kodlar
+# HTML-CSS-JavaScript
+Öğrenme sürecim boyunca oluşturduğum projeler ve kodlar.
