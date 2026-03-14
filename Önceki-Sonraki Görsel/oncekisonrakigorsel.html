@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Önceki ve Sonraki Görsel</title>
+</head>
+
+<body>
+	<input type="button" value="Önceki Görsel" onClick="oncekiGorsel()";>
+	<img src="Resimler/htmlgorsel.png" alt="HTML" id="resim">
+	<input type="button" value="Sonraki Görsel" onClick="sonrakiGorsel()";>
+	
+	<script>
+	function sonrakiGorsel(){
+		document.getElementById("resim").src="Resimler/htmlgorsel.png";
+	}
+		function oncekiGorsel(){
+			document.getElementById("resim").src="Resimler/cssgorsel.png";
+		}
+	
+	</script>
+		   
+</body>
+</html>
