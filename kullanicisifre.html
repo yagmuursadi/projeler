@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Başlıksız Belge</title>
+</head>
+
+<body>
+	
+
+<form>
+    <input type="text" placeholder="Kullanıcı Adı Giriniz" id="kullaniciAdi">
+    <input type="text" placeholder="Şifre Giriniz" id="sifre">
+    <input type="button" value="Giriş Yap" onClick="kontrolEt()">
+    <p id="sonuc"></p>
+</form>
+
+<script>
+function kontrolEt(){
+    var mesaj;
+    var kullanici = document.getElementById("kullaniciAdi").value;
+    var sifre = document.getElementById("sifre").value;
+
+    if(kullanici === "Kullanıcı" && sifre === "12345"){
+        mesaj = "Girişiniz Onaylandı.";
+    } 
+    else{
+        mesaj = "Girişiniz Onaylanmadı.";
+    }
+
+    document.getElementById("sonuc").innerHTML = mesaj;
+}
+</script>
+
+</body>
+</html>
